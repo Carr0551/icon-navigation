@@ -1,29 +1,5 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
-  box-sizing: border-box;
-
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
   font-family: "Abhaya Libre", serif;
-  background-color: #423ca3;
-  text-decoration: none;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
 }
 
 .masthead {
@@ -34,10 +10,12 @@ html {
 .logo {
   text-align: center;
 }
+.icon {
+  text-align: center;
+}
 
 h1 {
   color: #fff;
-  font-weight: bold;
 }
 
 a {
@@ -49,6 +27,10 @@ a {
   border: none;
 }
 
+.nav {
+  text-align: center;
+}
+
 nav a {
   text-decoration: none;
 }
@@ -57,15 +39,18 @@ nav a:hover {
   color: #423ca3;
   background-color: #fff;
 }
+
 @media only screen and (min-width: 60em) {
 
   .nav {
-    display: inline-block;
+    text-align: right;
+  }
+
+  .btn {
     text-align: right;
   }
 
   .logo {
-    display: inline-block;
     text-align: left;
   }
 
